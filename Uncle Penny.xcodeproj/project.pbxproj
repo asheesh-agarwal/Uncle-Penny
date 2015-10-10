@@ -22,6 +22,7 @@
 		A653536E1BC9B8560043B32C /* you.png in Resources */ = {isa = PBXBuildFile; fileRef = A653536D1BC9B8560043B32C /* you.png */; settings = {ASSET_TAGS = (); }; };
 		A65353701BC9B87A0043B32C /* compete.png in Resources */ = {isa = PBXBuildFile; fileRef = A653536F1BC9B87A0043B32C /* compete.png */; settings = {ASSET_TAGS = (); }; };
 		A65353731BC9BBE80043B32C /* CompeteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65353721BC9BBE80043B32C /* CompeteTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A65353761BC9D0D70043B32C /* Communicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A65353751BC9D0D70043B32C /* Communicator.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		A653536F1BC9B87A0043B32C /* compete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compete.png; sourceTree = "<group>"; };
 		A65353711BC9BBE80043B32C /* CompeteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompeteTableViewController.h; path = ../CompeteTableViewController.h; sourceTree = "<group>"; };
 		A65353721BC9BBE80043B32C /* CompeteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompeteTableViewController.m; path = ../CompeteTableViewController.m; sourceTree = "<group>"; };
+		A65353741BC9D0D70043B32C /* Communicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Communicator.h; sourceTree = "<group>"; };
+		A65353751BC9D0D70043B32C /* Communicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Communicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 			children = (
 				A65353391BC9953D0043B32C /* AppDelegate.h */,
 				A653533A1BC9953D0043B32C /* AppDelegate.m */,
+				A65353741BC9D0D70043B32C /* Communicator.h */,
+				A65353751BC9D0D70043B32C /* Communicator.m */,
 				A65353501BC9B5CB0043B32C /* RegistrationViewController.h */,
 				A65353511BC9B5CB0043B32C /* RegistrationViewController.m */,
 				A65353531BC9B5E30043B32C /* LoginViewController.h */,
@@ -192,6 +197,7 @@
 			files = (
 				A65353581BC9B62A0043B32C /* DashboardViewController.m in Sources */,
 				A65353521BC9B5CB0043B32C /* RegistrationViewController.m in Sources */,
+				A65353761BC9D0D70043B32C /* Communicator.m in Sources */,
 				A653533B1BC9953D0043B32C /* AppDelegate.m in Sources */,
 				A65353381BC9953D0043B32C /* main.m in Sources */,
 				A65353551BC9B5E30043B32C /* LoginViewController.m in Sources */,

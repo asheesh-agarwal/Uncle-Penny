@@ -41,6 +41,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="loginButtonpressed:" destination="FbF-AQ-Bvc" eventType="touchUpInside" id="GpG-Z4-Lu3"/>
                                     <segue destination="YEq-mC-9FR" kind="modal" id="R7W-fk-9W4"/>
                                 </connections>
                             </button>
@@ -49,6 +50,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Uncle Penny" id="q2h-Pt-ADa"/>
+                    <connections>
+                        <outlet property="mobileNumberTextField" destination="iIV-W4-0Ha" id="yzn-kM-d6m"/>
+                        <outlet property="passwordTextField" destination="qFD-q5-cfp" id="uKN-ed-1ur"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8U3-BD-1AC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -284,7 +289,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="YEq-mC-9FR" kind="modal" id="Wmq-xN-VaS"/>
+                                    <action selector="registerButtonPressed:" destination="CSa-C2-hJP" eventType="touchUpInside" id="i9J-8z-qUQ"/>
+                                    <segue destination="YEq-mC-9FR" kind="modal" identifier="Dashboard" id="Wmq-xN-VaS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -292,6 +298,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Uncle Penny" id="nX0-h6-2n2"/>
+                    <connections>
+                        <outlet property="accountNumberTextField" destination="rLm-Qm-uQj" id="cAr-zB-rj1"/>
+                        <outlet property="bankNameTextField" destination="uHo-xd-3h9" id="3IT-14-9ox"/>
+                        <outlet property="mobileNumberTextField" destination="WET-Ew-ScU" id="DbJ-zb-fCh"/>
+                        <outlet property="nameFieldText" destination="KXh-HG-TBx" id="0c7-6l-iiz"/>
+                        <outlet property="passwordTextField" destination="W8f-8m-HJH" id="TO8-Nh-4Ng"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xl8-OV-CPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -426,6 +439,6 @@
         <image name="you.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Wmq-xN-VaS"/>
+        <segue reference="R7W-fk-9W4"/>
     </inferredMetricsTieBreakers>
 </document>
