@@ -9,10 +9,19 @@
 /* Begin PBXBuildFile section */
 		A65353381BC9953D0043B32C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A65353371BC9953D0043B32C /* main.m */; };
 		A653533B1BC9953D0043B32C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A653533A1BC9953D0043B32C /* AppDelegate.m */; };
-		A653533E1BC9953D0043B32C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A653533D1BC9953D0043B32C /* ViewController.m */; };
 		A65353411BC9953D0043B32C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A653533F1BC9953D0043B32C /* Main.storyboard */; };
 		A65353431BC9953D0043B32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65353421BC9953D0043B32C /* Assets.xcassets */; };
 		A65353461BC9953D0043B32C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65353441BC9953D0043B32C /* LaunchScreen.storyboard */; };
+		A65353521BC9B5CB0043B32C /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65353511BC9B5CB0043B32C /* RegistrationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A65353551BC9B5E30043B32C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65353541BC9B5E30043B32C /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A65353581BC9B62A0043B32C /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65353571BC9B62A0043B32C /* DashboardViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A65353611BC9B6870043B32C /* CompeteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65353601BC9B6870043B32C /* CompeteViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A65353641BC9B69C0043B32C /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65353631BC9B69C0043B32C /* FeedTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A65353681BC9B7EA0043B32C /* register.png in Resources */ = {isa = PBXBuildFile; fileRef = A65353671BC9B7EA0043B32C /* register.png */; settings = {ASSET_TAGS = (); }; };
+		A653536A1BC9B8120043B32C /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = A65353691BC9B8120043B32C /* login.png */; settings = {ASSET_TAGS = (); }; };
+		A653536C1BC9B8480043B32C /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = A653536B1BC9B8480043B32C /* friends.png */; settings = {ASSET_TAGS = (); }; };
+		A653536E1BC9B8560043B32C /* you.png in Resources */ = {isa = PBXBuildFile; fileRef = A653536D1BC9B8560043B32C /* you.png */; settings = {ASSET_TAGS = (); }; };
+		A65353701BC9B87A0043B32C /* compete.png in Resources */ = {isa = PBXBuildFile; fileRef = A653536F1BC9B87A0043B32C /* compete.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +29,25 @@
 		A65353371BC9953D0043B32C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A65353391BC9953D0043B32C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A653533A1BC9953D0043B32C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A653533C1BC9953D0043B32C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A653533D1BC9953D0043B32C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A65353401BC9953D0043B32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A65353421BC9953D0043B32C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65353451BC9953D0043B32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A65353471BC9953D0043B32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A65353501BC9B5CB0043B32C /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../RegistrationViewController.h; sourceTree = "<group>"; };
+		A65353511BC9B5CB0043B32C /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../RegistrationViewController.m; sourceTree = "<group>"; };
+		A65353531BC9B5E30043B32C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A65353541BC9B5E30043B32C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A65353561BC9B62A0043B32C /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		A65353571BC9B62A0043B32C /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		A653535F1BC9B6870043B32C /* CompeteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompeteViewController.h; path = ../CompeteViewController.h; sourceTree = "<group>"; };
+		A65353601BC9B6870043B32C /* CompeteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompeteViewController.m; path = ../CompeteViewController.m; sourceTree = "<group>"; };
+		A65353621BC9B69C0043B32C /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedTableViewController.h; path = ../FeedTableViewController.h; sourceTree = "<group>"; };
+		A65353631BC9B69C0043B32C /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedTableViewController.m; path = ../FeedTableViewController.m; sourceTree = "<group>"; };
+		A65353671BC9B7EA0043B32C /* register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = register.png; sourceTree = "<group>"; };
+		A65353691BC9B8120043B32C /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		A653536B1BC9B8480043B32C /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
+		A653536D1BC9B8560043B32C /* you.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = you.png; sourceTree = "<group>"; };
+		A653536F1BC9B87A0043B32C /* compete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compete.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +82,23 @@
 			children = (
 				A65353391BC9953D0043B32C /* AppDelegate.h */,
 				A653533A1BC9953D0043B32C /* AppDelegate.m */,
-				A653533C1BC9953D0043B32C /* ViewController.h */,
-				A653533D1BC9953D0043B32C /* ViewController.m */,
+				A65353501BC9B5CB0043B32C /* RegistrationViewController.h */,
+				A65353511BC9B5CB0043B32C /* RegistrationViewController.m */,
+				A65353531BC9B5E30043B32C /* LoginViewController.h */,
+				A65353541BC9B5E30043B32C /* LoginViewController.m */,
+				A65353561BC9B62A0043B32C /* DashboardViewController.h */,
+				A65353571BC9B62A0043B32C /* DashboardViewController.m */,
+				A653535F1BC9B6870043B32C /* CompeteViewController.h */,
+				A65353601BC9B6870043B32C /* CompeteViewController.m */,
+				A65353621BC9B69C0043B32C /* FeedTableViewController.h */,
+				A65353631BC9B69C0043B32C /* FeedTableViewController.m */,
 				A653533F1BC9953D0043B32C /* Main.storyboard */,
 				A65353421BC9953D0043B32C /* Assets.xcassets */,
+				A65353671BC9B7EA0043B32C /* register.png */,
+				A65353691BC9B8120043B32C /* login.png */,
+				A653536B1BC9B8480043B32C /* friends.png */,
+				A653536D1BC9B8560043B32C /* you.png */,
+				A653536F1BC9B87A0043B32C /* compete.png */,
 				A65353441BC9953D0043B32C /* LaunchScreen.storyboard */,
 				A65353471BC9953D0043B32C /* Info.plist */,
 				A65353361BC9953D0043B32C /* Supporting Files */,
@@ -137,9 +172,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A653536C1BC9B8480043B32C /* friends.png in Resources */,
 				A65353461BC9953D0043B32C /* LaunchScreen.storyboard in Resources */,
 				A65353431BC9953D0043B32C /* Assets.xcassets in Resources */,
+				A65353681BC9B7EA0043B32C /* register.png in Resources */,
+				A65353701BC9B87A0043B32C /* compete.png in Resources */,
 				A65353411BC9953D0043B32C /* Main.storyboard in Resources */,
+				A653536A1BC9B8120043B32C /* login.png in Resources */,
+				A653536E1BC9B8560043B32C /* you.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A653533E1BC9953D0043B32C /* ViewController.m in Sources */,
+				A65353581BC9B62A0043B32C /* DashboardViewController.m in Sources */,
+				A65353611BC9B6870043B32C /* CompeteViewController.m in Sources */,
+				A65353521BC9B5CB0043B32C /* RegistrationViewController.m in Sources */,
 				A653533B1BC9953D0043B32C /* AppDelegate.m in Sources */,
 				A65353381BC9953D0043B32C /* main.m in Sources */,
+				A65353551BC9B5E30043B32C /* LoginViewController.m in Sources */,
+				A65353641BC9B69C0043B32C /* FeedTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +343,7 @@
 				A653534C1BC9953D0043B32C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

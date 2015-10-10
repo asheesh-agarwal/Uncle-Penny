@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RegistrationViewController.h
 //  Uncle Penny
 //
 //  Created by Asheesh Agarwal on 10/10/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RegistrationViewController : UIViewController
 
 @end
-
