@@ -1,5 +1,5 @@
 //
-//  CompeteViewController.h
+//  CompeteTableViewController.h
 //  Uncle Penny
 //
 //  Created by Asheesh Agarwal on 10/10/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CompeteViewController : UIViewController
+@interface CompeteTableViewController : UITableViewController
 
 @end

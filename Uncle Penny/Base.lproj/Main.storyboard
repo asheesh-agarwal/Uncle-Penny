@@ -162,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="2068" y="1090"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Compete Table View Controller-->
         <scene sceneID="ghX-HG-kuQ">
             <objects>
-                <tableViewController id="ZFC-w7-Qb5" sceneMemberID="viewController">
+                <tableViewController id="ZFC-w7-Qb5" customClass="CompeteTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jqc-Ts-2zI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
