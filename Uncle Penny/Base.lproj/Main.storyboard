@@ -130,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="2864" y="-280"/>
         </scene>
-        <!--Friend Feeds-->
+        <!--Friends Feed-->
         <scene sceneID="AOc-E1-zIq">
             <objects>
                 <tableViewController id="zRi-qP-sdp" customClass="FeedTableViewController" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Rej-GI-FEC">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rej-GI-FEC" id="F07-6Y-hri">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -156,25 +156,41 @@
                             <outlet property="delegate" destination="zRi-qP-sdp" id="oy3-np-45C"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Friend Feeds" image="friends.png" id="7Xr-uV-GXC"/>
+                    <navigationItem key="navigationItem" title="Friends Feed" id="SqX-Sz-NzD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2I-80-h8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1872" y="862"/>
+            <point key="canvasLocation" x="2068" y="1090"/>
         </scene>
-        <!--Compete View Controller-->
-        <scene sceneID="pyS-0W-OgQ">
+        <!--Table View Controller-->
+        <scene sceneID="ghX-HG-kuQ">
             <objects>
-                <viewController id="j4I-iR-ohS" customClass="CompeteViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xtg-By-faa">
+                <tableViewController id="ZFC-w7-Qb5" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jqc-Ts-2zI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ANK-aH-gsk">
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nw2-yb-gw9">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nw2-yb-gw9" id="TeK-1L-8ZM">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZFC-w7-Qb5" id="V47-xn-BeZ"/>
+                            <outlet property="delegate" destination="ZFC-w7-Qb5" id="DYK-3P-VW2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="4La-dW-xuc">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="KTd-0g-QkP">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="aT2-dZ-ETb">
                             <rect key="frame" x="34.5" y="7.5" width="251" height="29"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <animations/>
@@ -184,10 +200,10 @@
                             </segments>
                         </segmentedControl>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6QE-4u-Ade" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q54-9g-IpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2864" y="371"/>
+            <point key="canvasLocation" x="2864" y="404"/>
         </scene>
         <!--Bets-->
         <scene sceneID="gkq-kH-2cG">
@@ -202,8 +218,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="elc-3n-piG" kind="relationship" relationship="viewControllers" id="DBD-AI-1aD"/>
-                        <segue destination="dlq-CJ-yRW" kind="relationship" relationship="viewControllers" id="7ox-fE-tz3"/>
-                        <segue destination="zRi-qP-sdp" kind="relationship" relationship="viewControllers" id="iid-To-kXl"/>
+                        <segue destination="4uR-vu-Goq" kind="relationship" relationship="viewControllers" id="iid-To-kXl"/>
+                        <segue destination="5bN-SG-Ziq" kind="relationship" relationship="viewControllers" id="y1C-6U-FAe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5a-d7-dvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -362,24 +378,44 @@
             <point key="canvasLocation" x="2332" y="-280"/>
         </scene>
         <!--Compete-->
-        <scene sceneID="ZLz-V1-cqX">
+        <scene sceneID="p1j-Kc-Q9c">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dlq-CJ-yRW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Compete" image="compete.png" id="iF9-B0-4ak"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5bN-SG-Ziq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Compete" image="compete.png" id="EG0-mU-YZ1"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tfk-49-W26">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="heW-dx-jXS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="j4I-iR-ohS" kind="relationship" relationship="rootViewController" id="Kju-Ni-WtR"/>
+                        <segue destination="ZFC-w7-Qb5" kind="relationship" relationship="rootViewController" id="fcv-IG-O2H"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IDz-DY-FUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXl-iT-ZWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2332" y="371"/>
+            <point key="canvasLocation" x="2332" y="404"/>
+        </scene>
+        <!--Friend Feeds-->
+        <scene sceneID="NiX-tC-G8J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4uR-vu-Goq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Friend Feeds" image="friends.png" id="7Xr-uV-GXC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MRi-b1-Kd8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zRi-qP-sdp" kind="relationship" relationship="rootViewController" id="BzD-oY-A83"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdW-zJ-h9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="1090"/>
         </scene>
     </scenes>
     <resources>
