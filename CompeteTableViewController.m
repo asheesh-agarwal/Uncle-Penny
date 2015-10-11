@@ -8,6 +8,7 @@
 
 #import "CompeteTableViewController.h"
 #import "Communicator.h"
+#import "ExpandChallengeView.h"
 
 @interface CompeteTableViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
@@ -20,7 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
+    [tempImageView setFrame:self.tableView.frame];
     
+    self.tableView.backgroundView = tempImageView;
     if(self.segmentControl.selectedSegmentIndex == 0){
         [self getChallenges: @"http://<>/"];
     } else {
@@ -54,7 +58,30 @@
     
     // TODO
     
-    [self performSegueWithIdentifier:@"Dashboard" sender:self];
+    [self performSegueWithIdentifier:@"ExpandedView" sender:self];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    [self performSegueWithIdentifier:@"ExpandedView" sender:self];
+    
+    // Display Alert Message
+    
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"ExpandedView"])
+    {
+        // Get reference to the destination view controller
+        ExpandChallengeView *vc = [segue destinationViewController];
+        
+        vc.obj = [self.getDummyServerResponse objectAtIndex:0];
+        // Pass any objects to the view controller here, like...
+    }
 }
 
 - (IBAction)segmentControlChanged:(id)sender {
@@ -98,9 +125,13 @@
 - (NSArray*) getDummyServerResponse{
     
     
-    NSDictionary *challenge = @{@"challenge_id": @"1234", @"challenge_name": @"This is my first challenge", @"challenge_details": @"This is my details", @"start_date": @"start_date", @"end_date": @"" };
+    NSDictionary *challenge = @{@"challenge_id": @"1234", @"challenge_name": @"Microsoft Saver of the Year, 2015", @"challenge_details": @"Increase your savings by 35% to win a Xbox Console", @"start_date": @"9/25/2015", @"end_date": @"10/25/2016" };
+    NSDictionary *challenge2 = @{@"challenge_id": @"1234", @"challenge_name": @"Bloomberg Save the Max, 2015", @"challenge_details": @"Compete to save the maximum in a team of 4", @"start_date": @"5/25/2015", @"end_date": @"10/25/2016" };
+    NSDictionary *challenge3 = @{@"challenge_id": @"1234", @"challenge_name": @"Capital One, 2015", @"challenge_details": @"Maximum increase in savings", @"start_date": @"4/8/2016", @"end_date": @"10/25/2016" };
+    NSDictionary *challenge4 = @{@"challenge_id": @"1234", @"challenge_name": @"BNY Mellon,", @"challenge_details": @"Increase your savings by 50% to win a Xbox Console", @"start_date": @"9/25/2015", @"end_date": @"10/25/2016" };
+    NSDictionary *challenge5 = @{@"challenge_id": @"1234", @"challenge_name": @"Microsoft Saver of the Year, 2015", @"challenge_details": @"Increase your savings by 35% to win a Xbox Console", @"start_date": @"9/25/2015", @"end_date": @"10/25/2016" };
     
-    NSArray *response = [[NSArray alloc] initWithObjects:challenge, challenge, challenge, challenge, nil];
+    NSArray *response = [[NSArray alloc] initWithObjects:challenge, challenge2, challenge3, challenge4, challenge5, nil];
     
     
     return response;

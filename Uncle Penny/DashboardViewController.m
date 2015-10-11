@@ -9,6 +9,7 @@
 #import "DashboardViewController.h"
 
 @interface DashboardViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *avgMonthlyExp;
 
 @end
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.avgMonthlyExp.numberOfLines=3;
+    self.avgMonthlyExp.text= @"Average Monthly Expense";
 }
 
 - (void)didReceiveMemoryWarning {

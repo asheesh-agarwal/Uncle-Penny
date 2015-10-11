@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "CompeteTableViewController.h"
 @interface ExpandChallengeView : UIViewController
-@property CompeteTableViewController *obj;
+@property NSArray *obj;
 @end
