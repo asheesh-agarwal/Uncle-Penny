@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CompeteTableViewController : UITableViewController
-
+@property NSInteger *indexOfCell;
+@property NSArray *serverResponse;
+@property NSInteger *segSelected;
 @end
+
+

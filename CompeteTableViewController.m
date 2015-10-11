@@ -11,7 +11,7 @@
 
 @interface CompeteTableViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
-@property NSArray *serverResponse;
+
 @property Communicator *communicator;
 
 @end
@@ -26,7 +26,7 @@
     } else {
         [self getChallenges: @"http://<>/"];
     }
-    
+    self.segSelected= self.segmentControl.selectedSegmentIndex;
     self.serverResponse = [self getDummyServerResponse];
     
     // Get the data from server based on single and group selection
@@ -49,6 +49,7 @@
 - (void) handleChallengeResponse: (NSDictionary *) response {
     if([response count] > 0){
         //[[NSUserDefaults standardUserDefaults] setObject:response forKey:@"UserDetails"];
+        [self performSegueWithIdentifier:@"ExpandedView" sender:self];
     }
     
     // TODO
@@ -80,7 +81,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"challenge"];
-    
+    self.indexOfCell = indexPath.section;
     if(cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"challenge"];
     }
@@ -90,8 +91,6 @@
     cell.textLabel.text = [challenge objectForKey:@"challenge_name"];
     
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-    
-    // Configure the cell...
     
     return cell;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25B9BD011BCA331400982D78 /* ExpandChallengeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B9BD001BCA331400982D78 /* ExpandChallengeView.m */; settings = {ASSET_TAGS = (); }; };
 		A65353381BC9953D0043B32C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A65353371BC9953D0043B32C /* main.m */; };
 		A653533B1BC9953D0043B32C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A653533A1BC9953D0043B32C /* AppDelegate.m */; };
 		A65353411BC9953D0043B32C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A653533F1BC9953D0043B32C /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25B9BCFF1BCA331400982D78 /* ExpandChallengeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandChallengeView.h; sourceTree = "<group>"; };
+		25B9BD001BCA331400982D78 /* ExpandChallengeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandChallengeView.m; sourceTree = "<group>"; };
 		A65353331BC9953D0043B32C /* Uncle Penny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uncle Penny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65353371BC9953D0043B32C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A65353391BC9953D0043B32C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				A65353631BC9B69C0043B32C /* FeedTableViewController.m */,
 				A65353711BC9BBE80043B32C /* CompeteTableViewController.h */,
 				A65353721BC9BBE80043B32C /* CompeteTableViewController.m */,
+				25B9BCFF1BCA331400982D78 /* ExpandChallengeView.h */,
+				25B9BD001BCA331400982D78 /* ExpandChallengeView.m */,
 				A653533F1BC9953D0043B32C /* Main.storyboard */,
 				A65353421BC9953D0043B32C /* Assets.xcassets */,
 				A65353671BC9B7EA0043B32C /* register.png */,
@@ -201,6 +206,7 @@
 			files = (
 				A65353581BC9B62A0043B32C /* DashboardViewController.m in Sources */,
 				A65353521BC9B5CB0043B32C /* RegistrationViewController.m in Sources */,
+				25B9BD011BCA331400982D78 /* ExpandChallengeView.m in Sources */,
 				A65353761BC9D0D70043B32C /* Communicator.m in Sources */,
 				A653533B1BC9953D0043B32C /* AppDelegate.m in Sources */,
 				A65353381BC9953D0043B32C /* main.m in Sources */,
