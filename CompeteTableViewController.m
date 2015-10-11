@@ -7,8 +7,12 @@
 //
 
 #import "CompeteTableViewController.h"
+#import "Communicator.h"
 
 @interface CompeteTableViewController ()
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
+@property NSArray *serverResponse;
+@property Communicator *communicator;
 
 @end
 
@@ -17,11 +21,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    if(self.segmentControl.selectedSegmentIndex == 0){
+        [self getChallenges: @"http://<>/"];
+    } else {
+        [self getChallenges: @"http://<>/"];
+    }
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.serverResponse = [self getDummyServerResponse];
+    
+    // Get the data from server based on single and group selection
+}
+
+- (void) getChallenges: (NSString*) url {
+    NSDictionary *requestData = @{};
+    
+    [self.communicator communicateDataForPOST:requestData ForURL:url completion:^(NSDictionary *responseData){
+        
+        NSLog(@"Challenge Response Response: %@", responseData);
+        
+        dispatch_async(dispatch_get_main_queue(), ^ {
+            [self handleChallengeResponse:responseData];
+            
+        });
+    }];
+}
+
+- (void) handleChallengeResponse: (NSDictionary *) response {
+    if([response count] > 0){
+        //[[NSUserDefaults standardUserDefaults] setObject:response forKey:@"UserDetails"];
+    }
+    
+    // TODO
+    
+    [self performSegueWithIdentifier:@"Dashboard" sender:self];
+}
+
+- (IBAction)segmentControlChanged:(id)sender {
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +68,45 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    // Based on number of challenges received from server display the number of rows
+    
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.serverResponse count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"challenge"];
+    
+    if(cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"challenge"];
+    }
+    
+    NSDictionary *challenge = [self.serverResponse objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = [challenge objectForKey:@"challenge_name"];
+    
+    [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     
     // Configure the cell...
     
     return cell;
 }
-*/
+
+- (NSArray*) getDummyServerResponse{
+    
+    
+    NSDictionary *challenge = @{@"challenge_id": @"1234", @"challenge_name": @"This is my first challenge", @"challenge_details": @"This is my details", @"start_date": @"start_date", @"end_date": @"" };
+    
+    NSArray *response = [[NSArray alloc] initWithObjects:challenge, challenge, challenge, challenge, nil];
+    
+    
+    return response;
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

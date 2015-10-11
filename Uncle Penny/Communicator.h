@@ -12,7 +12,7 @@
 
 - (void) communicateDataForPOST: (NSDictionary *) data ForURL: (NSString *) url completion: (void (^)(NSDictionary *)) completion;
 
-- (void) communicateDataForGET: ForURL: (NSString *) url completion: (void (^)(NSDictionary *)) completion;
+- (void) communicateDataForGET: (NSString *) url completion: (void (^)(NSDictionary *)) completion;
 
 
 @end

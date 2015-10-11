@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *bankNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *accountNumberTextField;
 @property Communicator *communicator;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
 
 @end
 
@@ -31,7 +32,7 @@
     
     if(validationStatus){
         
-        NSDictionary *requestData = @{@"name":self.nameFieldText.text, @"password":self.passwordTextField.text, @"bankname":self.bankNameTextField.text, @"accnumber":self.accountNumberTextField.text, @"mobilenumber":self.mobileNumberTextField.text};
+        NSDictionary *requestData = @{@"firstname":self.nameFieldText.text, @"lastname":self.nameFieldText.text, @"password":self.passwordTextField.text, @"bankname":self.bankNameTextField.text, @"banknumber":self.accountNumberTextField.text, @"username":self.mobileNumberTextField.text};
         
         [self.communicator communicateDataForPOST:requestData ForURL:@"http://<>/registerUser" completion:^(NSDictionary *responseData){
             
@@ -47,7 +48,7 @@
 
 - (void) handleRegistrationResponse: (NSDictionary *) response {
     if([response count] > 0){
-        [[NSUserDefaults standardUserDefaults] setObject:response forKey:@"UserDetails"];
+        //[[NSUserDefaults standardUserDefaults] setObject:response forKey:@"UserDetails"];
     }
     
     // TODO

@@ -33,7 +33,7 @@
 }
 
 - (void) loginUser {
-    NSDictionary *requestData = @{@"mobilenumber":self.mobileNumberTextField.text, @"password":self.passwordTextField.text};
+    NSDictionary *requestData = @{@"username":self.mobileNumberTextField.text, @"password":self.passwordTextField.text};
     
     [self.communicator communicateDataForPOST:requestData ForURL:@"http:/<>/loginUser" completion:^(NSDictionary *responseData){
         
@@ -48,7 +48,7 @@
 
 - (void) handleLoginResponse: (NSDictionary *) response {
     if([response count] > 0){
-        [[NSUserDefaults standardUserDefaults] setObject:response forKey:@"UserDetails"];
+        //[[NSUserDefaults standardUserDefaults] setObject:response forKey:@"UserDetails"];
     }
     
     // TODO
